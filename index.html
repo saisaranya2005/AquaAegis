@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaAegis - Ocean Protection Resources</title>
+    <style>
+        /* Softer Color Scheme */
+        :root {
+            --primary: #609ab3;
+            --secondary: #89CFF0;
+            --background: #5ebad9;
+            --accent: #CAF0F8;
+            --text: #023047;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styling */
+        .header {
+            background: var(--primary);
+            color: var(--text);
+            padding: 20px;
+            text-align: center;
+            font-size: 2.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero iframe {
+            width: 100vw;
+            height: 100%;
+            border: none;
+            pointer-events: none;
+        }
+
+        /* Content Section */
+        .content {
+            flex-grow: 1;
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        /* Modern Card Design */
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+
+        .card-content p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            padding: 12px 20px;
+            background: var(--accent);
+            color: var(--text);
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card-content a:hover {
+            background: var(--secondary);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: var(--primary);
+            color: var(--text);
+            font-size: 1.3em;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">🌊 AquaAegis - Protect Our Oceans 🌊</div>
+    
+    <div class="hero">
+        <iframe src="https://www.youtube.com/embed/cdRviRlcFL8?autoplay=1&mute=1&loop=1&playlist=cdRviRlcFL8&controls=0&showinfo=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="content">
+        <h1>Explore Global Ocean Resources</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_14408263_v3.jpg" alt="Marine Conservation">
+                <div class="card-content">
+                    <h3>Marine Conservation</h3>
+                    <p>Learn about global marine conservation.</p>
+                    <a href="https://www.marineconservation.org.au/" target="_blank">Visit</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://scx2.b-cdn.net/gfx/news/hires/2022/coral-reef.jpg" alt="Coral Reef Protection">
+                <div class="card-content">
+                    <h3>Coral Reef Protection</h3>
+                    <p>Help protect fragile coral reefs.</p>
+                    <a href="https://coralreefalliance.org/" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI8HCdMaoYLkBp-e8G24HO4NRz5dku-QKMdQ&s" alt="UN Ocean Decade">
+                <div class="card-content">
+                    <h3>UN Ocean Decade</h3>
+                    <p>Support global ocean sustainability.</p>
+                    <a href="https://oceandecade.org/" target="_blank">Join Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.shopify.com/s/files/1/2376/4853/files/OC-power-page_a724d19f-aacc-4fd3-96b3-f3352c990fe7_2048x2048.jpg?v=1715716820" alt="Plastic Pollution">
+                <div class="card-content">
+                    <h3>Plastic Pollution</h3>
+                    <p>Combat ocean plastic pollution.</p>
+                    <a href="https://www.oceanconservancy.org/trash-free-seas/" target="_blank">Act Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc6666d1kvEo6IHEBcqVxnMTs58_xXL0xwtg&s" alt="Climate Change Impact">
+                <div class="card-content">
+                    <h3>Climate Change Impact</h3>
+                    <p>Learn how climate change affects oceans.</p>
+                    <a href="https://climate.nasa.gov/" target="_blank">Explore</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://oceanexplorer.noaa.gov/images/about-oer-highlight.jpg" alt="Deep Sea Exploration">
+                <div class="card-content">
+                    <h3>Deep Sea Exploration</h3>
+                    <p>Discover the hidden world of deep seas.</p>
+                    <a href="https://oceanexplorer.noaa.gov/" target="_blank">Dive In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">© 2025 AquaAegis - Protecting Oceans Together</div>
+</body>
+</html>
